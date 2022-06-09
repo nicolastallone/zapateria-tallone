@@ -135,6 +135,10 @@ footer {
     background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
 }
 
+#contacto {
+    width: auto;
+    align-items: center;
+}
 
 
 @media screen and (min-width: 320px){
