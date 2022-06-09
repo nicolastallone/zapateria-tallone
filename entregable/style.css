@@ -123,6 +123,20 @@ header, footer, nav {
     display: grid;
 }
 
+button:hover {
+    background-color: #f705b7;
+}
+
+header {
+    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
+}
+
+footer {
+    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
+}
+
+
+
 @media screen and (min-width: 320px){
     #main {
         grid-template-columns: auto;
