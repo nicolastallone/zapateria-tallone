@@ -25,9 +25,9 @@ nav {
     background-color: #f9a8ea;
 }
 
-nav ul li {
+/* nav ul li {
     display: inline;
-}
+} */
 
 ul {
     list-style-type: none;
@@ -36,7 +36,7 @@ ul {
 a,
 button {
     text-decoration: none;
-    color: #040404;
+    color: #b90c63;
 }
 
 button {
@@ -52,16 +52,16 @@ button {
     margin: 5px;
 }
 
-nav {
+/* nav {
     font-size: large;
     font-weight: 500;
-}
+} */
 
 
-ul li {
+/* ul li {
     padding: 2px;
     margin-left: -20px;
-}
+} */
 
 header {
     padding: 30px;
@@ -71,9 +71,9 @@ nav ul a {
     padding: 10px;
 }
 
-nav ul {
+/* nav ul {
     margin-left: -20px;
-}
+} */
 
 article {
     background-color: white;
@@ -124,7 +124,7 @@ header, footer, nav {
 }
 
 button:hover {
-    background-color: #f705b7;
+    background-color: #8e0590;
 }
 
 header {
@@ -159,28 +159,28 @@ footer {
         align-items: stretch;
     }
 
-    #ulNav, #inputHeader {
+   /*  #ulNav, #inputHeader {
         display: none;
-    }
+    } */
 
     nav {
         display: flex;
         justify-content: center;
     }
 
-    #inputNav {
-        margin-left: 30px;
+   /*  #inputNav {
+        margin-left: 50px;
     }
 
     #menuBurger {
-        margin-right: 30px;
-    }
+        margin-right: 50px;
+    } */
 
 
-    .item {
+   /*  .item {
         justify-self: stretch;
         align-self: start;
-    }
+    } */
 }
 
 @media screen and (min-width: 360px) {
@@ -201,7 +201,7 @@ footer {
         align-items: stretch;
     }
 
-    #inputNav, #menuBurger {
+    /* #inputNav, #menuBurger {
         display: block;
         margin-left: 30px;
         margin-right: 30px;
@@ -212,7 +212,7 @@ footer {
     }
     #ulNav, #inputHeader {
         display: none;
-    }
+    } */
 }
 
 @media screen and (min-width: 600px) {}
@@ -239,10 +239,12 @@ footer {
         align-items: stretch;
     }
 
-    #inputNav, #menuBurger {
+
+   /*  #inputNav, #menuBurger {
         display: none;
     }
     #ulNav, #inputHeader {
         display: block;
-    }
+    } */
+
 }
