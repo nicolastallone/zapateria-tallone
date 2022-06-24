@@ -1,5 +1,11 @@
 @import "colores";
 
+@mixin colorFondo ($color) {
+    background-color: $color;
+}
+
+
+
 body {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +37,7 @@ a, button {
 
 button {
     border-radius: 5px;
-    background-color: rgb(254, 254, 254);
+    @include colorFondo(rgb(254, 254, 254));
     padding: 3px;
 }
 
@@ -52,11 +58,11 @@ nav ul a {
 }
 
 article {
-    background-color: white;
+    @include colorFondo(white);
     border-radius: 15px;
     text-align: center;
     button {
-        background-color: white;
+        @include colorFondo(white);
         &:hover {
             background-color: $colorAmarillo;
             color: black;
@@ -115,7 +121,7 @@ header {
 }
 
 footer {
-    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
+    @extend header
 }
 
 #contacto {
@@ -123,6 +129,11 @@ footer {
     align-items: center;
 }
 
+@each $red, $color in $coloresRedes {
+    .#{$red}{
+        color: $color;
+    }
+}
 
 @media screen and (min-width: 320px){
     #main {
