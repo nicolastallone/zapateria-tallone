@@ -4,10 +4,11 @@
     background-color: $color;
 }
 
+$estilos: (color:black,borde:15px);
 
 
 body {
-    color: black;
+    color: map-get($estilos, color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -141,7 +142,10 @@ footer {
         grid-template-rows: 15% 10% auto 15%;
         column-gap: 10px;
         row-gap: 10px;
-        grid-template-areas: "header" " nav" "section" "footer";
+        grid-template-areas: "header" 
+                                " nav" 
+                                "section" 
+                                "footer";
     }
 
     section {
