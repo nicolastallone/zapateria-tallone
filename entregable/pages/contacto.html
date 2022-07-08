@@ -58,33 +58,38 @@
 
 
     <section>
-    <fieldset>
-        <legend>Contactanos:</legend>
-        <form action="" method="get">
-             <li>
-               <label for="name">Nombre y Apellido:</label><br>
-               <input type="text" id="name" name="user_name" />
-             </li>
-             <li>
-               <label for="mail">Correo electrónico:</label><br>
-               <input type="email" id="mail" name="user_email" required />
-             </li>
-             <li>
-               <label for="msg">Mensaje:</label> <br>
-               <textarea id="msg" name="user_message"></textarea>
-             </li>
-             <br>
-             <label for="bases\_y\_condiciones">Acepto las bases y condiciones</label>
-          <input type="checkbox" name="bases\_y\_condiciones" value="acepta" />
-          <br><br>
-               <input type="submit">
-               <input type="reset">
-        </form>       
-           
-    </fieldset>
+      <form class="row g-3" action="" method="get">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido">
+        </div>
+        <div class="col-md-6">
+          <label for="mail" class="form-label">Mail</label>
+          <input type="email" class="form-control" id="mail" placeholder="@">
+        </div>
+        <div class="col-md-6">
+          <label for="ciudad" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="ciudad">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+        </div>
+      </form>
     </section>
 
-    <br>
+
 
     <footer id="footer">
       <a class="bi bi-facebook facebook" href="https://www.facebook.com/OlivettaShoes/"></a>
