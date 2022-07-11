@@ -42,10 +42,6 @@ footer a {
   font-size: 30px;
 }
 
-header, footer {
-  padding: 30px;
-}
-
 nav ul a {
   padding: 10px;
 }
@@ -70,14 +66,6 @@ img {
 
 section {
   padding: 20px;
-}
-
-.item {
-  background-color: #f705b7;
-  color: white;
-}
-
-section {
   grid-area: section;
 }
 
@@ -87,7 +75,9 @@ nav {
 
 header, footer {
   grid-area: header;
+  padding: 30px;
   justify-content: space-between;
+  background-image: linear-gradient(to bottom, pink, rgb(245, 103, 210));
 }
 
 footer {
@@ -103,19 +93,6 @@ header, footer, nav {
 
 #main, section {
   display: grid;
-}
-
-button:hover {
-  background-color: #8e0590;
-}
-
-header, footer {
-  background-image: linear-gradient(to bottom, pink, rgb(245, 103, 210));
-}
-
-#contacto {
-  width: auto;
-  align-items: center;
 }
 
 .facebook {

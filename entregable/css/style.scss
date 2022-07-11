@@ -50,10 +50,6 @@ footer a {
     font-size: 30px;
 }
 
-header {
-    padding: 30px;
-    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
-}
 
 nav ul a {
     padding: 10px;
@@ -79,16 +75,10 @@ img {
 
 section {
     padding: 20px;
-}
-
-.item {
-    background-color: #f705b7;
-    color: white;
-}
-
-section {
     grid-area: section;
 }
+
+
 
 nav {
     grid-area: nav;
@@ -96,12 +86,15 @@ nav {
 
 header {
     grid-area: header;
+    padding: 30px;
     justify-content: space-between;
+    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
 }
 
 footer {
     grid-area: footer;
     justify-content: center;
+    @extend header
 }
 
 header, footer, nav {
@@ -114,18 +107,6 @@ header, footer, nav {
     display: grid;
 }
 
-button:hover {
-    background-color: #8e0590;
-}
-
-footer {
-    @extend header
-}
-
-#contacto {
-    width: auto;
-    align-items: center;
-}
 
 @each $red, $color in $coloresRedes {
     .#{$red}{
