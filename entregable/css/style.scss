@@ -52,6 +52,7 @@ footer a {
 
 header {
     padding: 30px;
+    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
 }
 
 nav ul a {
@@ -115,10 +116,6 @@ header, footer, nav {
 
 button:hover {
     background-color: #8e0590;
-}
-
-header {
-    background-image: linear-gradient(to bottom, pink , rgb(245, 103, 210));
 }
 
 footer {
